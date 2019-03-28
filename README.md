@@ -17,10 +17,8 @@ Add these repositories to the android part of your app build.gradle
    
 Add This line of code to the dependencies in your build.gradle (replace x.x.x with newest version below in green) 
 
-    implementation 'com.github.JZDevelopers:JZUtils:x.x.x'
-    
+    implementation 'com.github.JZDevelopers:JZUtils:x.x.x'    
 [![](https://jitpack.io/v/JordanZimmitti/JZRecyclerAdapter.svg)](https://jitpack.io/#JordanZimmitti/JZRecyclerAdapter)
-
 #### Using JZRecyclerAdapter
 
 JZRecyclerAdapter is a generic adapter for a RecyclerView. To use the adapter first create a RrecylerView.
