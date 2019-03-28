@@ -29,7 +29,7 @@ android {
         versionCode 1
 
         // The Library Version Number//
-        versionName "1.0.0"
+        versionName "1.0"
 
         // Tests Runner For The Library//
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
