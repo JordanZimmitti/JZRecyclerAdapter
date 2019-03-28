@@ -36,9 +36,27 @@ JZRecyclerAdapter is a generic adapter for a RecyclerView. To use the adapter fi
         
 The following code is how to create the JZRecyclerAdapter. The first parameter is for the layout you want the data to be shown in. The second paramater is the list containing the data of any given type.
 
+    val arrayOfInts = ArrayList<Int>()
+    arrayOfInts.add(1)
+    arrayOfInts.add(2)
+    arrayOfInts.add(3)
+
+    // Defines And Instantiates The JZRecyclerAdapter//
     val intAdapter = JZRecyclerAdapter(R.layout.custom_layout, arrayOfInts) {
 
-          // Gets The Data From The List And Saves Its Value
+          // Gets The Data From The List To Show Its Value In A TextView//
           textView.text = arrayOfInts.toString()
     }
+
+To set the spacing between each item in the RecyclerView use the following line of code
+
+    // Adds Bottom Padding After Each Item In The RecyclerView//
+    recyclerView.addItemDecoration(JZRecyclerAdapter.Spacing(60))
+    
+To setup JZRecyclerAdapter with your RecyclerView use the following lines of code
+
+    // Shows All The Integers In The List//
+    recyclerView.hasFixedSize()
+    recyclerView.layoutManager = LinearLayoutManager(this)
+    recyclerView.adapter       = intAdapter
        
