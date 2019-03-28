@@ -1,33 +1,46 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+// Android Gradle Data//
 android {
+
+    // SDK Version Library The Is Based On//
     compileSdkVersion 28
 
-
-    defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-    }
-
+    // Build Types For The Library//
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
+    // How The Library Is Configured//
+    defaultConfig {
+
+        // The Lowest Android Version The Library Can Run On//
+        minSdkVersion 21
+
+        // The Latest Version Of Android The Library Can Run On//
+        targetSdkVersion 28
+
+        // The Number Of Times The Library Was Updated//
+        versionCode 2
+
+        // The Library Version Number//
+        versionName "2.0.0"
+
+        // Tests Runner For The Library//
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
 }
 
+// Third Party Libraries//
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.1'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.davidecirillo.multichoicerecyclerview:multichoicerecyclerview:2.3.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
