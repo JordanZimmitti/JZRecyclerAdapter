@@ -92,7 +92,7 @@ JZRecylerAdapter also has a built in multi-selection tool. To setup multi-select
     
 When you want to handle when the RecyclerView is scrolling use the following lines of code
 
-    // When userList Is Scrolling (Below Code Is An Example Use Case With A FAB Button)//
+    // When intList Is Scrolling (Below Code Is An Example Use Case With A FAB Button)//
     JZRecyclerAdapter.whenScrolling(intList) { scrollY ->
 
         when {
