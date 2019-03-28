@@ -69,7 +69,7 @@ To add an on click listener to the items in the RecyclerView use the following l
 JZRecylerAdapter also has a built in multi-selection tool. To setup multi-selection use the following lines of code
 
     // What Happens When An Item Is Multi-Selected (Long Clicked)
-    JZRecyclerAdapter.multiSelected(userAdapter) { itemSelected, allItemSelected, isSelected ->
+    JZRecyclerAdapter.multiSelected(intAdapter) { itemSelected, allItemSelected, isSelected ->
         
         when {
 
@@ -87,5 +87,20 @@ JZRecylerAdapter also has a built in multi-selection tool. To setup multi-select
             !isSelected -> {
 
             }
+        }
+    }
+    
+When you want to handle when the RecyclerView is scrolling use the following lines of code
+
+    // When userList Is Scrolling (Below Code Is An Example Use Case With A FAB Button)//
+    JZRecyclerAdapter.whenScrolling(intList) { scrollY ->
+
+        when {
+
+            // Hides The Fab When The RecyclerView Is Scrolling Down//
+            scrollY > 0 && fabAddUser.isShown -> fabAddUser.hide()
+
+            // Shows The Fab For Everything Else//
+            else -> fabAddUser.show()
         }
     }
