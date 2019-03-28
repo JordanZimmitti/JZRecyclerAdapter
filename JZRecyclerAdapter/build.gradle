@@ -19,7 +19,7 @@ android {
     // How The Library Is Configured//
     defaultConfig {
 
-        // The Lowest Android Version The Library Can Run On//
+        // The Lowest Version Of Android The Library Can Run On//
         minSdkVersion 21
 
         // The Latest Version Of Android The Library Can Run On//
