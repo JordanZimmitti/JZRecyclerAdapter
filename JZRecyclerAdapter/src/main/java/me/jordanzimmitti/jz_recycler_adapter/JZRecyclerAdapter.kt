@@ -18,7 +18,7 @@ private typealias Scroll      = (dy: Int)                                       
  *
  * @author Jordan Zimmitti
  *
- * @version 2.0.0
+ * @version 1.0.0
  */
 class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
                               private val list    : List<TYPE>,

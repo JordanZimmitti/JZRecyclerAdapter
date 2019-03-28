@@ -26,10 +26,10 @@ android {
         targetSdkVersion 28
 
         // The Number Of Times The Library Was Updated//
-        versionCode 2
+        versionCode 1
 
         // The Library Version Number//
-        versionName "2.0.0"
+        versionName "1.0.0"
 
         // Tests Runner For The Library//
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
