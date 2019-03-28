@@ -3,7 +3,7 @@ Generic RecyclerAdapter For The Android RecyclerView
 
 #### How To Access JZRecyclerAdapter In Your Android App
 
-Add these repositories to the android part of you app build.gradle
+Add these repositories to the android part of your app build.gradle
 
     // Repositories For App//
     repositories {
