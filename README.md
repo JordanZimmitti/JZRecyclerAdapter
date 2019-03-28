@@ -36,7 +36,7 @@ JZRecyclerAdapter is a generic adapter for a RecyclerView. To use the adapter fi
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
         
-The Following Code Is How To Create The JZRecyclerAdapter. The first parameter is for the layout you want the data to be shown in. The second paramater is the list containing the data of any given type.
+The following code is how to create the JZRecyclerAdapter. The first parameter is for the layout you want the data to be shown in. The second paramater is the list containing the data of any given type.
 
     val intAdapter = JZRecyclerAdapter(R.layout.custom_layout, arrayOfInts) {
 
