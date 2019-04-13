@@ -41,7 +41,7 @@ The following code is how to create the JZRecyclerAdapter. The first parameter i
     arrayOfInts.add(2)
     arrayOfInts.add(3)
 
-    // Defines And Instantiates The JZRecyclerAdapter//
+    // Define And Instantiates The JZRecyclerAdapter//
     val intAdapter = JZRecyclerAdapter(R.layout.custom_layout, arrayOfInts) {
 
           // Gets The Data From The List To Show Its Value In A TextView//
