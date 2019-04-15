@@ -39,8 +39,8 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
         /**.
          * Function That Gets The Code For When The RecyclerAdapter Is Multi Selected
          *
-         * @param recyclerAdapter Any recycler adapter
-         * @param multiSelect     The code for when the recycler adapter is multi selected
+         * @param [recyclerAdapter] Any recycler adapter
+         * @param [multiSelect]     The code for when the recycler adapter is multi selected
          */
         fun multiSelected(recyclerAdapter: JZRecyclerAdapter<*>, multiSelect: MultiSelect) {
 
@@ -54,8 +54,8 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
         /**.
          * Function That Gets The Code For When The RecyclerView Is Scrolling
          *
-         * @param scroll       The code for when the recycler view is scrolling
-         * @param recyclerView Any recycler view
+         * @param [recyclerView] Any recycler view
+         * @param [scroll]       The code for when the recycler view is scrolling
          */
         fun whenScrolling(recyclerView: RecyclerView, scroll: Scroll) {
 
@@ -69,7 +69,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
         /**.
          * Function That Handles When The RecyclerView Is Scrolling
          *
-         * @param recyclerView Any recycler view
+         * @param [recyclerView] Any recycler view
          */
         private fun onScrolled(recyclerView: RecyclerView) {
 
@@ -87,7 +87,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
         /**.
          * Function That Handles When An Item Is MultiSelected
          *
-         * @param recyclerAdapter Any recycler adapter
+         * @param [recyclerAdapter] Any recycler adapter
          */
         private fun onMultiSelected(recyclerAdapter: JZRecyclerAdapter<*>) {
 
@@ -131,7 +131,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Function That Creates And Inflates A Custom View
      *
-     * @param parent The parent view
+     * @param [parent] The parent view
      *
      * @return The custom view
      */
@@ -144,8 +144,8 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Function That Handles When A List Item Is Clicked
      *
-     * @param holder   Where the views are defined and initialized
-     * @param position Where the specific item is located in the list
+     * @param [holder]   Where the views are defined and initialized
+     * @param [position] Where the specific item is located in the list
      *
      * @return The on click action
      */
@@ -162,10 +162,10 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Function that Sets The List's Items To Their Corresponding View
      *
-     * @param holder   Where the views are defined and initialized
-     * @param position Where the specific Item is located in the list
+     * @param [holder]   Where the views are defined and initialized
+     * @param [position] Where the specific Item is located in the list
      */
-    override fun onBindViewHolder(holder: JZRecyclerAdapter<TYPE>.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         // Differs To Parent Class//
         super.onBindViewHolder(holder, position)
@@ -177,7 +177,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Function That Gets The Code For When An Item is Clicked
      *
-     * @param itemClick The code for when the item is clicked
+     * @param [itemClick] The code for when the item is clicked
      */
     fun setItemClick(itemClick: ItemClicked) {
 
@@ -188,7 +188,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Class That Specifies The Amount Of White Space Between Each Item
      *
-     * @param height The amount of white space between each item
+     * @param [height] The amount of white space between each item
      */
     class Spacing(private val height: Int): RecyclerView.ItemDecoration() {
 
@@ -210,7 +210,7 @@ class JZRecyclerAdapter<TYPE>(private val layoutId: Int,
     /**.
      * Class That Sets Up The Views To Show The Lists Items
      *
-     * @param customView Custom View That Shows The Lists Items
+     * @param [customView] Custom view that shows the lists items
      */
     inner class ViewHolder(customView: View): RecyclerView.ViewHolder(customView)
 }
