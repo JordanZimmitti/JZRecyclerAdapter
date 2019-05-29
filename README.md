@@ -36,6 +36,7 @@ JZRecyclerAdapter is a generic adapter for a RecyclerView. To use the adapter fi
         
 The following code is how to create the JZRecyclerAdapter. The first parameter is for the layout you want the data to be shown in. The second paramater is the list containing the data of any given type.
 
+    // Creates An ArrayList Of Ints//
     val arrayOfInts = ArrayList<Int>()
     arrayOfInts.add(1)
     arrayOfInts.add(2)
