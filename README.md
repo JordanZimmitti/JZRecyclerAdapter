@@ -62,13 +62,14 @@ To setup JZRecyclerAdapter with your RecyclerView use the following lines of cod
 
 To add an on click listener to the items in the RecyclerView use the following lines of code
 
+    // When An Item Is Clicked//
     intAdapter.setItemClick { position, view ->
             
     }
     
 JZRecylerAdapter also has a built in multi-selection tool. To setup multi-selection use the following lines of code
 
-    // What Happens When An Item Is Multi-Selected (Long Clicked)
+    // When An Item Is Multi-Selected (Long Clicked)//
     JZRecyclerAdapter.multiSelected(intAdapter) { itemSelected, allItemSelected, isSelected ->
         
         when {
