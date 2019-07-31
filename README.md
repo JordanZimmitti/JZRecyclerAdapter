@@ -26,13 +26,12 @@ JZRecyclerAdapter is a generic adapter for a RecyclerView. To use the adapter fi
     <!-- RecyclerView recyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:overScrollMode="never"
-        android:paddingStart="16dip"
-        android:paddingEnd="16dip"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/titleActivity"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:overScrollMode          ="never"
+        android:paddingEnd              ="16dip"
+        android:paddingStart            ="16dip"
+        android:layout_alignParentStart ="true"
+        android:layout_height           ="match_parent"
+        android:layout_width            ="match_parent"/>
         
 The following code is how to create the JZRecyclerAdapter. The first parameter is for the layout you want the data to be shown in. The second paramater is the list containing the data of any given type.
 
